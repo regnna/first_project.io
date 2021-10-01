@@ -1,0 +1,259 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+}
+header.home{
+	width: 100%;height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url('../../tb_5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.desh{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background: url("../../desh.jpg");
+	overflow: hidden;
+
+}
+nav{
+	width: 100;height: 15vh;
+	background: rgba(0, 0, 0, 0.2);
+	display: flex;justify-content: space-between;
+	align-items: center ;text-transform: uppercase;
+}
+nav .logo{
+	width: 25%; text-align: center;
+	color: floralwhite;
+}
+nav .menu{
+	width: 57%;
+	display: flex;justify-content: space-around;
+}
+nav .menu a {
+	width: 60%;
+	text-decoration: none;color: antiquewhite;
+	font-weight: strong;
+}
+nav .menu a:first-child:hover{
+	color: #03045e;
+}
+nav .menu a:last-child:hover{
+	color:  #03045e;
+}
+nav .menu a:nth-child(2):hover{
+	color:  #03045e;
+}
+nav .menu a:nth-child(3):hover{
+	color:  #03045e;
+}
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;align-items: center;
+	justify-content: center;
+	text-align: center;color: red;
+}
+section{
+
+}
+section h2{
+	margin-bottom: 20px;
+	font-size: 35px;font-weight: 200;letter-spacing: 3px;word-spacing: 6px;
+	text-shadow: 2px 1px 2px rgb(0,33,71);
+	color: floralwhite;
+}
+section h1{
+	margin-bottom: 7px;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 3px 1px 5px black;
+	text-transform: uppercase;
+	color: navajowhite;
+}
+section p{
+	font-size: 30px;
+	word-spacing: 2px;
+	margin-bottom: 30px;
+	text-shadow: 3px 2px 1px black;
+	color: floralwhite;
+}
+section a{
+	padding: 15px 30px;
+	border-radius: 4px;
+	font-size: 21px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	outline: none;
+	color: antiquewhite;
+	transition: all .4s ease;
+}
+section .button{
+	background: #fff;
+	color: #000;
+}
+.button:hover{
+	background: #00b894;
+	color: white;
+}
+section .buttwo{
+	background: #00b894;
+	color: white;
+}
+.buttwo:hover{
+	background: #fff;
+	color: #000;
+}
+.change_content:after{
+	content: '';
+	animation: changetext 21s infinite linear;
+	color: #00b894;
+}
+@keyframes changetext{
+	0%{content: "Bishnupur";}
+	20%{content: "Mukutmanipur";}
+	35%{content: "Susunia Hill"}
+	50%{content: "Jhilimili";}
+	65%{content: "Joyrambati";}
+	80%{content: "   Sutan Forest";}
+	100%{content: "   Dol Madol";}
+
+
+}
+.sidebar{
+	position: fixed;
+	width: 0;
+	height: 100%;
+	background: #3e0748;
+	transition: 0.5s;
+	overflow: hidden;
+	padding-top: 16px;
+}
+/*.sidebar:hover{
+	width: 300px;
+}*/
+
+.sidebar.active{
+	width: 60px;
+}
+.sidebar ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.sidebar ul li{
+	position: relative;
+	width: 100%;
+	list-style: none;
+}
+.sidebar ul li:hover{
+	background: #ea1d63;
+}
+.sidebar ul li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: #ffff;
+}
+.sidebar ul li a .icon{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+.sidebar ul li a .icon .fa{
+	font-size: 24px;
+}
+.sidebar ul li a .title{
+	position: relative;
+	display: block;
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	text-align: start;
+	white-space: nowrap;
+}
+.toggle{
+	position: fixed;
+	bottom: 75vh;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background: #330748;
+	cursor: pointer;
+}
+.toggle:hover{
+	background: #ea1d63;
+}
+.toggle:before{
+	content: '\f0c9';
+	font-family: fontAwesome;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+}
+.toggle:active:before{
+	content: '\f00d';
+}
+@media (max_width: 767px){
+	.sidebar{
+		left: -60px;
+	}
+	.sidebar.active{
+		left: -60px;
+	}
+}
+
+.de h1{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	transform: translate(-10%,-10%);
+}
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-color:#263238; min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:#CCC;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
